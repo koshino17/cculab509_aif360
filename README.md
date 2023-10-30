@@ -17,10 +17,10 @@ We selected the following six fields to detect bias in the dataset:'Gender'	'Del
 
 About Code
 =
-This program is used to detect bias in data.
-We referenced the example "demo_mdss_detector.ipynb" in AIF360.
-We detected bias in the 2020 Taipei traffic accident data, mainly using the indicator of whether the number of injuries is zero.
-We found that the presence of blank fields in the "Accident type and form" column would bias the prediction of the number of injuries.
+<p>This program is used to detect bias in data.</p>
+<p>We referenced the example "demo_mdss_detector.ipynb" in AIF360.</p>
+<p>We detected bias in the 2020 Taipei traffic accident data, mainly using the indicator of whether the number of injuries is zero.</p>
+<p>We found that the presence of blank fields in the "Accident type and form" column would bias the prediction of the number of injuries.</p>
 
 
 
