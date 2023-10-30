@@ -1,9 +1,9 @@
 # cculab509_aif360
 About Dataset
 =
-Our dataset is based on the Taipei City Transportation Bureau's 2020 traffic accident data. 
-It contains 213,872 records with 105 fields. 
-Our goal is to identify any bias in the data.
+<p>Our dataset is based on the Taipei City Transportation Bureau's 2020 traffic accident data. </p>
+<p>It contains 213,872 records with 105 fields. </p>
+<p>Our goal is to identify any bias in the data.</p>
 
 Description of the data
 -
