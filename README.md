@@ -8,11 +8,11 @@ Our goal is to identify any bias in the data.
 Description of the data
 -
 We selected the following six fields to detect bias in the dataset:'Gender'	'Delivery_Type'	'Age'	'Vehicle types'	'Accident type'	'Degree of injury'.
-*In the 'Gender' field, we set males as 1 and females as 2, we also removed records with blank fields, animal-related accidents, and hit-and-run accidents.
-*In the 'Delivery_Type' field, we set 1 to delivery drivers and 0 to non-delivery drivers, we also removed records with blank fields.
-*In the 'Age' field, we set people under the age of 18 as 1, people between the ages of 19 and 64 as 2, and people over the age of 65 as 3, we also removed records with blank fields.
-*In the 'Vehicle types' field, we set B03 (private passenger car) as 1, C03 (standard heavy motorcycle) as 2, and all others as 0, we also removed records with blank fields.
-*In the 'Accident type' field, we set blank fields to 0 and non-blank fields to 1.
++In the 'Gender' field, we set males as 1 and females as 2, we also removed records with blank fields, animal-related accidents, and hit-and-run accidents.
++In the 'Delivery_Type' field, we set 1 to delivery drivers and 0 to non-delivery drivers, we also removed records with blank fields.
++In the 'Age' field, we set people under the age of 18 as 1, people between the ages of 19 and 64 as 2, and people over the age of 65 as 3, we also removed records with blank fields.
++In the 'Vehicle types' field, we set B03 (private passenger car) as 1, C03 (standard heavy motorcycle) as 2, and all others as 0, we also removed records with blank fields.
+* In the 'Accident type' field, we set blank fields to 0 and non-blank fields to 1.
 *In the 'Degree of injury' field, we converted it to "Is there no injury?" and set "No injury" to 1 and all others to 0.
 
 About Code
