@@ -5,7 +5,8 @@ Our dataset is based on the Taipei City Transportation Bureau's 2020 traffic acc
 It contains 213,872 records with 105 fields. 
 Our goal is to identify any bias in the data.
 
-Description of the data:
+Description of the data
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 We selected the following six fields to detect bias in the dataset:'Gender'	'Delivery_Type'	'Age'	'Vehicle types'	'Accident type'	'Degree of injury'.
 In the 'Gender' field, we set males as 1 and females as 2, we also removed records with blank fields, animal-related accidents, and hit-and-run accidents.
 In the 'Delivery_Type' field, we set 1 to delivery drivers and 0 to non-delivery drivers, we also removed records with blank fields.
@@ -14,7 +15,8 @@ In the 'Vehicle types' field, we set B03 (private passenger car) as 1, C03 (stan
 In the 'Accident type' field, we set blank fields to 0 and non-blank fields to 1.
 In the 'Degree of injury' field, we converted it to "Is there no injury?" and set "No injury" to 1 and all others to 0.
 
-About Code:
+About Code
+============================================================================================================================================
 This program is used to detect bias in data.
 We referenced the example "demo_mdss_detector.ipynb" in AIF360.
 We detected bias in the 2020 Taipei traffic accident data, mainly using the indicator of whether the number of injuries is zero.
