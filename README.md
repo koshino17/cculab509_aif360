@@ -1,9 +1,23 @@
 # cculab509_aif360
-Our dataset is based on the Taipei City Transportation Bureau's 2020 traffic accident data. We selected a few important columns (such as age, gender, and number of injuries) for analysis.
+About Dataset:
+Our dataset is based on the Taipei City Transportation Bureau's 2020 traffic accident data. 
+It contains 213,872 records with 105 fields. 
+Our goal is to identify any bias in the data.
 
-This program is used to detect bias in data. 
-We mainly detect bias in Taipei's 2020 traffic accident data, using the number of injuries as an indicator. 
-We found that the presence or absence of the 'accident type and type' field can bias the prediction of the number of injuries.
+Description of the data:
+We selected the following six fields to detect bias in the dataset:'Gender'	'Delivery_Type'	'Age'	'Vehicle types'	'Accident type'	'Degree of injury'。
+In the 'Gender' field, we set males as 1 and females as 2, we also removed records with blank fields, animal-related accidents, and hit-and-run accidents.
+In the 'Delivery_Type' field, we set 1 to delivery drivers and 0 to non-delivery drivers, we also removed records with blank fields.
+In the 'Age' field, we set people under the age of 18 as 1, people between the ages of 19 and 64 as 2, and people over the age of 65 as 3, we also removed records with blank fields.
+In the 'Vehicle types' field, we set B03 (private passenger car) as 1, C03 (standard heavy motorcycle) as 2, and all others as 0, we also removed records with blank fields.
+In the 'Accident type' field, we set blank fields to 0 and non-blank fields to 1.
+In the 'Degree of injury' field, we converted it to "Is there no injury?" and set "No injury" to 1 and all others to 0.
+
+About Code:
+This program is used to detect bias in data.
+We referenced the example "demo_mdss_detector.ipynb" in AIF360.
+We detected bias in the 2020 Taipei traffic accident data, mainly using the indicator of whether the number of injuries is zero.
+We found that the presence of blank fields in the "Accident type and form" column would bias the prediction of the number of injuries.
 
 
 
